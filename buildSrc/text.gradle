@@ -1,0 +1,64 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile 'com.android.tools.build:gradle:3.2.1'
+}
+
+repositories {
+    jcenter()
+    google()
+    mavenCentral()
+}
+
+
+group = "com.integration.lint"
+archivesBaseName = "lint-custom-plugin"
+version = "1.0.0"
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository (url: uri('../repo'))
+        }
+    }
+}
+
+
+//ext {
+//    lintFile = file("lint.xml")
+//    goalFilePath = "${projectDir.getParent()}/lintproduct/"
+//    suffix = " ---"
+//}
+//
+///***
+// * 考虑到需要检测的工程目录，可能已经存在lint.xml文件
+// *
+// */
+//task lintCopy(type: Copy) {
+//    if (!lintFile.exists()){
+//        throw new GradleException("原始lint文件校验，${lintFile.getName()} 不存在$suffix")
+//    }
+//    println "开始拷贝文件$suffix"
+//    from(lintFile)
+//    into(file(goalFilePath))
+//}
+//
+//task lintConfig(dependsOn: lintCopy) {
+////    def newOptions = new IdeLintOptions()
+////    newOptions.lintConfig = file("$goalFilePath${lintFile.getName()}")
+//
+//}
+//gradle.taskGraph.afterTask { task, TaskState state ->
+//    if (task == lintCopy) {
+//        def goalFile = file("$goalFilePath${lintFile.getName()}")
+//        println "目标文件路径${goalFile.getPath()}$suffix"
+//        if (goalFile.exists()){
+//            goalFile.delete()
+//        }
+//    }
+//}
+
