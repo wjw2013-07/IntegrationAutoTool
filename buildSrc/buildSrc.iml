@@ -111,5 +111,13 @@
     <orderEntry type="library" exported="" name="Gradle: gradle-api-4.6" level="project" />
     <orderEntry type="library" exported="" name="Gradle: groovy-all-2.4.12" level="project" />
     <orderEntry type="library" exported="" name="Gradle: gradle-installation-beacon-4.6" level="project" />
+    <orderEntry type="library" exported="" name="buildSrc.lint-custom-plugin-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="buildSrc.lint-custom-plugin-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="buildSrc.lint-custom-plugin-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="buildSrc.lint-custom-plugin-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="buildSrc.lint-custom-plugin-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="buildSrc.lint-custom-plugin-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="buildSrc.lint-custom-plugin-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="buildSrc.lint-custom-plugin-1.0.0" level="project" />
   </component>
 </module>
