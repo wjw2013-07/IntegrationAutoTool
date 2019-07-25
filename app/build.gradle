@@ -49,6 +49,8 @@ android {
             minifyEnabled true
             zipAlignEnabled true
             shrinkResources true
+            aaptOptions.cruncherEnabled = false
+            aaptOptions.useNewCruncher = false
             proguardFile 'proguard-rules.pro'
         }
 
