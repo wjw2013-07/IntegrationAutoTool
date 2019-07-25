@@ -1,0 +1,17 @@
+*.iml
+/local.properties
+.gradle
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+/.idea/
+/app/build
+/app/release
+/app/debug
+/app/reports
+/toollib/build
+/toollib/reports
+/testlib/build
+/testlib/reports
+/buildSrc/build/
